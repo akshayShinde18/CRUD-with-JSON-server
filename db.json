@@ -1,0 +1,45 @@
+{
+  "manager": [
+    {
+      "id": 1,
+      "name": "akki",
+      "email": "ak@gmail.com",
+      "phone": "8692989693"
+    },
+    {
+      "name": " omkar",
+      "email": " om@gmail.com",
+      "phone": " 9320831822",
+      "active": true,
+      "id": 2
+    },
+    {
+      "id": 4,
+      "name": " pogo rajpure",
+      "email": " pogo@gmail.com",
+      "phone": " 82849948383",
+      "active": true
+    },
+    {
+      "name": " chinmay",
+      "email": " cm@gmail.com",
+      "phone": " 777777",
+      "active": true,
+      "id": 5
+    },
+    {
+      "name": " amol",
+      "email": " am@gmail.com",
+      "phone": " 8419986133",
+      "active": true,
+      "id": 7
+    },
+    {
+      "name": " dagadya?",
+      "email": "vishaldagade",
+      "phone": "8286129609",
+      "active": true,
+      "id": 8
+    }
+  ]
+}

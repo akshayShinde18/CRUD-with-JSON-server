@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
+import Contactlisting from "./Contactlisting";
+import ManagerCreate from "./ManagerCreate";
+import ManagerDetails from "./ManagerDetails";
+import ManagerEdit from "./ManagerEdit";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Contact Manager App</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Contactlisting />}>
+          </Route>
+          <Route path="/manager/create" element={<ManagerCreate />}>
+          </Route>
+          <Route path="/manager/detail/:mid" element={<ManagerDetails />}>
+          </Route>
+          <Route path="/manager/edit/:mid" element={<ManagerEdit />}>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
